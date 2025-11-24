@@ -40,7 +40,8 @@
     <!-- Librerías -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- FontAwesome 6.4.0 para asegurar compatibilidad con fa-cow -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
 
     <style>
@@ -166,14 +167,14 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="JUEVES" data-shift="Mañana">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="JULIO PINEDA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> JULIO PINEDA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="JOSÉ FERNANDO RUIZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> JOSÉ FERNANDO RUIZ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="ANDRES MUÑOZ SIMMONDS" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> ANDRES MUÑOZ SIMMONDS</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="JOSÉ FERNANDO RUIZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> JOSÉ FERNANDO RUIZ</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="ANDRES MUÑOZ SIMMONDS" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> ANDRES MUÑOZ SIMMONDS</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="MARIA FERNANDA MONTENEGRO" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> MARIA FERNANDA MONTENEGRO</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="ANDRES SAMBONÍ" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> ANDRES SAMBONÍ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td>
                             <div class="flex flex-wrap gap-2">
-                                <button onclick="showPersonRole(this)" data-name="JUAN DIEGO AZA" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JUAN DIEGO AZA</button>
-                                <button onclick="showPersonRole(this)" data-name="MARIA INES SANCHEZ" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MARIA INES SANCHEZ</button>
+                                <button onclick="showPersonRole(this)" data-name="JUAN DIEGO AZA" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JUAN DIEGO AZA</button>
+                                <button onclick="showPersonRole(this)" data-name="MARIA INES SANCHEZ" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MARIA INES SANCHEZ</button>
                             </div>
                         </td></tr>
                     </tbody></table></div>
@@ -184,11 +185,11 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="JUEVES" data-shift="Tarde">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="JULISSA CARVAJAL" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> JULISSA CARVAJAL</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="CLAUDIA LOPEZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> CLAUDIA LOPEZ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DIANA ISABEL MORAN</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="CLAUDIA LOPEZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> CLAUDIA LOPEZ</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DIANA ISABEL MORAN</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="LUZ ELENA LAVERDE" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> LUZ ELENA LAVERDE</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="DANIELA MERA" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> DANIELA MERA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="YAMILETH OBANDO" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> YAMILETH OBANDO</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="YAMILETH OBANDO" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> YAMILETH OBANDO</button></td></tr>
                     </tbody></table></div>
                 </section>
 
@@ -197,11 +198,11 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="JUEVES" data-shift="Noche">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="PAOLA MEJIA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> PAOLA MEJIA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="MARCELA BETANCOURTH" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> MARCELA BETANCOURTH</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="DIEGO JIMENEZ" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DIEGO JIMENEZ</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="MARCELA BETANCOURTH" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> MARCELA BETANCOURTH</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="DIEGO JIMENEZ" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DIEGO JIMENEZ</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="OMAR ARBOLEDA" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> OMAR ARBOLEDA</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="LILIANA BAMBAGÜE" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> LILIANA BAMBAGÜE</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="MANUEL CORDOBA" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MANUEL CORDOBA</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="MANUEL CORDOBA" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MANUEL CORDOBA</button></td></tr>
                     </tbody></table></div>
                 </section>
             </div>
@@ -213,14 +214,14 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="VIERNES" data-shift="Mañana">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="JOHANA SAAVEDRA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> JOHANA SAAVEDRA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="ALIX LORENA ORDOÑEZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> ALIX LORENA ORDOÑEZ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="LUIS ALFONSO FERNÁNDEZ BURBANO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> LUIS ALFONSO FERNÁNDEZ BURBANO</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="ALIX LORENA ORDOÑEZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> ALIX LORENA ORDOÑEZ</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="LUIS ALFONSO FERNÁNDEZ BURBANO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> LUIS ALFONSO FERNÁNDEZ BURBANO</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="CHRISTIAN CAMILO ERAZO MUÑOZ" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> CHRISTIAN CAMILO ERAZO MUÑOZ</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="JARVI ANTONIO MOLANO MOLANO" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> JARVI ANTONIO MOLANO MOLANO</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td>
                             <div class="flex flex-wrap gap-2">
-                                <button onclick="showPersonRole(this)" data-name="YUDY CAROLINA SANTOS VARGAS" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> YUDY CAROLINA SANTOS VARGAS</button>
-                                <button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> DIANA ISABEL MORAN</button>
+                                <button onclick="showPersonRole(this)" data-name="YUDY CAROLINA SANTOS VARGAS" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> YUDY CAROLINA SANTOS VARGAS</button>
+                                <button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> DIANA ISABEL MORAN</button>
                             </div>
                         </td></tr>
                     </tbody></table></div>
@@ -231,11 +232,11 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="VIERNES" data-shift="Tarde">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="MARCELA BETANCOURTH" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> MARCELA BETANCOURTH</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="YERALDIN SANCHEZ CAMPO" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> YERALDIN SANCHEZ CAMPO</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="JOHN ARLEY ZEMANATE SOTELO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JOHN ARLEY ZEMANATE SOTELO</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="YERALDIN SANCHEZ CAMPO" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> YERALDIN SANCHEZ CAMPO</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="JOHN ARLEY ZEMANATE SOTELO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JOHN ARLEY ZEMANATE SOTELO</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="EYMI SILVANA VIDAL SOLIS" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> EYMI SILVANA VIDAL SOLIS</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="JESÚS ENRIQUE PÉREZ MOMPOTES" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> JESÚS ENRIQUE PÉREZ MOMPOTES</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="VIVIANA LOPEZ MOSQUERA" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> VIVIANA LOPEZ MOSQUERA</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="VIVIANA LOPEZ MOSQUERA" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> VIVIANA LOPEZ MOSQUERA</button></td></tr>
                     </tbody></table></div>
                 </section>
 
@@ -244,11 +245,11 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="VIERNES" data-shift="Noche">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="ANDRES SIMMONDS" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> ANDRES SIMMONDS</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="WILLIAM HORACIO LOPEZ CAPOTE" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> WILLIAM HORACIO LOPEZ CAPOTE</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td><button onclick="showPersonRole(this)" data-name="JUAN JOSE HURTADO VILLAMARIN" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JUAN JOSE HURTADO VILLAMARIN</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td><button onclick="showPersonRole(this)" data-name="WILLIAM HORACIO LOPEZ CAPOTE" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> WILLIAM HORACIO LOPEZ CAPOTE</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td><button onclick="showPersonRole(this)" data-name="JUAN JOSE HURTADO VILLAMARIN" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JUAN JOSE HURTADO VILLAMARIN</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-orange-600">CARPA DEL QUESO</td><td><button onclick="showPersonRole(this)" data-name="JULIAN ALBEIRO CHAMORRO CADAVID" data-role="CARPA DEL QUESO - EMPRENDIMIENTOS" class="person-badge"><i class="fa-solid fa-cheese text-orange-500"></i> JULIAN ALBEIRO CHAMORRO CADAVID</button></td></tr>
                         <tr class="zone-row"><td class="font-bold text-purple-600">ORGANIZADOR - COLISEO</td><td><button onclick="showPersonRole(this)" data-name="MIGUEL SANTIAGO ANGEL ERAZO" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> MIGUEL SANTIAGO ANGEL ERAZO</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="MONICA REGINA ORDOÑEZ ERAZO" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MONICA REGINA ORDOÑEZ ERAZO</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="MONICA REGINA ORDOÑEZ ERAZO" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MONICA REGINA ORDOÑEZ ERAZO</button></td></tr>
                     </tbody></table></div>
                 </section>
             </div>
@@ -260,13 +261,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="SÁBADO" data-shift="Mañana">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="DIEGO JIMENEZ" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> DIEGO JIMENEZ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="WILLIAM HORACIO LOPEZ CAPOTE" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> WILLIAM HORACIO LOPEZ CAPOTE</button>
                             <button onclick="showPersonRole(this)" data-name="MARIA DEL MAR GUTIERREZ VALENCIA" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> MARIA DEL MAR GUTIERREZ VALENCIA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="JULIAN ALBEIRO CHAMORRO CADAVID" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JULIAN ALBEIRO CHAMORRO CADAVID</button>
                             <button onclick="showPersonRole(this)" data-name="MIGUEL SANTIAGO ANGEL ERAZO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> MIGUEL SANTIAGO ANGEL ERAZO</button>
@@ -279,10 +280,10 @@
                             <button onclick="showPersonRole(this)" data-name="YULIANA LORENA SILVA MOSQUERA" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> YULIANA LORENA SILVA MOSQUERA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td>
                             <div class="flex flex-wrap gap-2">
-                                <button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> DIANA ISABEL MORAN</button>
-                                <button onclick="showPersonRole(this)" data-name="HAROLD ANDRES FERNANDEZ MEDINA" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> HAROLD ANDRES FERNANDEZ MEDINA</button>
+                                <button onclick="showPersonRole(this)" data-name="DIANA ISABEL MORAN" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> DIANA ISABEL MORAN</button>
+                                <button onclick="showPersonRole(this)" data-name="HAROLD ANDRES FERNANDEZ MEDINA" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> HAROLD ANDRES FERNANDEZ MEDINA</button>
                             </div>
                         </td></tr>
                     </tbody></table></div>
@@ -293,13 +294,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="SÁBADO" data-shift="Tarde">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="MANUEL CORDOBA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> MANUEL CORDOBA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="LILIANA PEREA PEÑA" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> LILIANA PEREA PEÑA</button>
                             <button onclick="showPersonRole(this)" data-name="SIDNEY MAGNOLIA SOLARTE CÓRDOBA" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> SIDNEY MAGNOLIA SOLARTE CÓRDOBA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="JEISON ANDRES LASSO CORRALES" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JEISON ANDRES LASSO CORRALES</button>
                             <button onclick="showPersonRole(this)" data-name="JHON ANDERSON VALENCIA GENOY" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JHON ANDERSON VALENCIA GENOY</button>
@@ -318,7 +319,7 @@
                             <button onclick="showPersonRole(this)" data-name="DAVID ALBERTO MEJIA REYES" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> DAVID ALBERTO MEJIA REYES</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="MARÍA FERNANDA ALARCÓN BUSTAMANTE" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MARÍA FERNANDA ALARCÓN BUSTAMANTE</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="MARÍA FERNANDA ALARCÓN BUSTAMANTE" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MARÍA FERNANDA ALARCÓN BUSTAMANTE</button></td></tr>
                     </tbody></table></div>
                 </section>
 
@@ -327,13 +328,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="SÁBADO" data-shift="Noche">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="JOSÉ FERNANDO RUIZ" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> JOSÉ FERNANDO RUIZ</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="LUIS ANGEL ACOSTA ORTEGA" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> LUIS ANGEL ACOSTA ORTEGA</button>
                             <button onclick="showPersonRole(this)" data-name="DUVÁN FRANCISCO CERON RIASCOS" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> DUVÁN FRANCISCO CERON RIASCOS</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="JOSÉ JARVY BANGUERO MINA" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JOSÉ JARVY BANGUERO MINA</button>
                             <button onclick="showPersonRole(this)" data-name="DAVID FERNANDO CHOCUE GUETIO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DAVID FERNANDO CHOCUE GUETIO</button>
@@ -351,7 +352,7 @@
                             <button onclick="showPersonRole(this)" data-name="JOSE ALBERTO ENRIQUEZ ESPINOSA" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> JOSE ALBERTO ENRIQUEZ ESPINOSA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="JHON JAIRO COLLAZOS" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JHON JAIRO COLLAZOS</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="JHON JAIRO COLLAZOS" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JHON JAIRO COLLAZOS</button></td></tr>
                     </tbody></table></div>
                 </section>
             </div>
@@ -363,13 +364,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="DOMINGO" data-shift="Mañana">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="JUAN DIEGO AZA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> JUAN DIEGO AZA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="GLADYS DEIFAN BASTIDAS GUSTIN" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> GLADYS DEIFAN BASTIDAS GUSTIN</button>
                             <button onclick="showPersonRole(this)" data-name="DORA ELIZABETH CERÓN PARRA" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> DORA ELIZABETH CERÓN PARRA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="OLGA LUCÍA AGUDELO LÓPEZ" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> OLGA LUCÍA AGUDELO LÓPEZ</button>
                             <button onclick="showPersonRole(this)" data-name="PABLO CARLOS RUIZ FERNANDEZ" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> PABLO CARLOS RUIZ FERNANDEZ</button>
@@ -382,7 +383,7 @@
                                 <button onclick="showPersonRole(this)" data-name="SEBASTIAN RESTREPO" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> SEBASTIAN RESTREPO</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td><button onclick="showPersonRole(this)" data-name="MAYRA ALEJANDRA HINESTROZA PAZ" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MAYRA ALEJANDRA HINESTROZA PAZ</button></td></tr>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td><button onclick="showPersonRole(this)" data-name="MAYRA ALEJANDRA HINESTROZA PAZ" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> MAYRA ALEJANDRA HINESTROZA PAZ</button></td></tr>
                     </tbody></table></div>
                 </section>
 
@@ -391,13 +392,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="DOMINGO" data-shift="Tarde">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="ANDRES SIMMONDS" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> ANDRES SIMMONDS</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="LUCY JOHANA CASAMACHIN PILLIMUÉ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> LUCY JOHANA CASAMACHIN PILLIMUÉ</button>
                             <button onclick="showPersonRole(this)" data-name="ADRIANA ALEJANDRA BOLAÑOS MELENDEZ" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> ADRIANA ALEJANDRA BOLAÑOS MELENDEZ</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="FABER GUSTAVO PISSO GURRUTE" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> FABER GUSTAVO PISSO GURRUTE</button>
                             <button onclick="showPersonRole(this)" data-name="JHON ANDERSON VALENCIA GENOY" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> JHON ANDERSON VALENCIA GENOY</button>
@@ -416,9 +417,9 @@
                             <button onclick="showPersonRole(this)" data-name="ANGIE PAOLA MOSQUERA ARTUNDUAGA" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> ANGIE PAOLA MOSQUERA ARTUNDUAGA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td>
                             <div class="flex flex-wrap gap-2">
-                            <button onclick="showPersonRole(this)" data-name="LISSETH XIOMARA VILLA ORDOÑEZ" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> LISSETH XIOMARA VILLA ORDOÑEZ</button>
+                            <button onclick="showPersonRole(this)" data-name="LISSETH XIOMARA VILLA ORDOÑEZ" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> LISSETH XIOMARA VILLA ORDOÑEZ</button>
                             </div>
                         </td></tr>
                     </tbody></table></div>
@@ -429,13 +430,13 @@
                     <div class="overflow-x-auto"><table class="w-full text-left schedule-table"><thead class="bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300"><tr><th class="p-4 w-1/3">Rol</th><th class="p-4">Responsable</th></tr></thead>
                     <tbody class="divide-y divide-slate-100 dark:divide-slate-700 search-scope" data-day="DOMINGO" data-shift="Noche">
                         <tr class="zone-row"><td class="font-bold text-amber-600">LIDER DE JORNADA</td><td><button onclick="showPersonRole(this)" data-name="MANUEL CORDOBA" data-role="LIDER DE JORNADA - REFRIGERIOS" class="person-badge"><i class="fa-solid fa-crown text-amber-500"></i> MANUEL CORDOBA</button></td></tr>
-                        <tr class="zone-row"><td class="font-bold text-blue-600">IMP. PLANTA ENERGÍA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-blue-600">IMPULSADOR EXTERNO - PLANTA ENERGÍA</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="CARLOS ALBERTO BETANCOURT IDROBO" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> CARLOS ALBERTO BETANCOURT IDROBO</button>
                             <button onclick="showPersonRole(this)" data-name="JEISON ANDRES LASSO CORRALES" data-role="IMPULSADOR EXTERNO - PLANTA DE ENERGÍA" class="person-badge"><i class="fa-solid fa-bolt text-blue-500"></i> JEISON ANDRES LASSO CORRALES</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-green-600">IMP. CORRALES</td><td>
+                        <tr class="zone-row"><td class="font-bold text-green-600">IMPULSADOR EXTERNO - CORRALES</td><td>
                             <div class="flex flex-wrap gap-2">
                             <button onclick="showPersonRole(this)" data-name="ANDRES JOSE GOMEZ" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> ANDRES JOSE GOMEZ</button>
                             <button onclick="showPersonRole(this)" data-name="DIDIER ALEXANDER CALDERON ROSERO" data-role="IMPULSADOR EXTERNO - CORRALES" class="person-badge"><i class="fa-solid fa-cow text-green-500"></i> DIDIER ALEXANDER CALDERON ROSERO</button>
@@ -447,10 +448,10 @@
                             <button onclick="showPersonRole(this)" data-name="JUAN DE DIOS MATINEZ ACOSTA" data-role="ORGANIZADOR - COLISEO MAYOR" class="person-badge"><i class="fa-solid fa-building text-purple-500"></i> JUAN DE DIOS MATINEZ ACOSTA</button>
                             </div>
                         </td></tr>
-                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y ACADÉMICA</td><td>
+                        <tr class="zone-row"><td class="font-bold text-rose-600">TARIMA Y AGENDA</td><td>
                             <div class="flex flex-wrap gap-2">
-                            <button onclick="showPersonRole(this)" data-name="FRANCISCO JOSE IDROBO IDROBO" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> FRANCISCO JOSE IDROBO IDROBO</button>
-                            <button onclick="showPersonRole(this)" data-name="JORGE LUIS GUECHE MANQUILLO" data-role="TARIMA Y AGENDA ACADÉMICA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JORGE LUIS GUECHE MANQUILLO</button>
+                            <button onclick="showPersonRole(this)" data-name="FRANCISCO JOSE IDROBO IDROBO" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> FRANCISCO JOSE IDROBO IDROBO</button>
+                            <button onclick="showPersonRole(this)" data-name="JORGE LUIS GUECHE MANQUILLO" data-role="TARIMA Y AGENDA" class="person-badge"><i class="fa-solid fa-microphone text-rose-500"></i> JORGE LUIS GUECHE MANQUILLO</button>
                             </div>
                         </td></tr>
                     </tbody></table></div>
@@ -500,34 +501,79 @@
     <div id="rolesModal" class="fixed inset-0 z-[70] bg-black/80 backdrop-blur-sm hidden flex justify-center items-center opacity-0 transition-opacity duration-300">
         <div class="bg-white dark:bg-slate-800 w-11/12 max-w-2xl rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300">
             <div class="bg-rose-600 text-white p-4 rounded-t-2xl flex justify-between items-center">
-                <h3 class="font-bold text-lg"><i class="fa-solid fa-book-open mr-2"></i> Descripción de Funciones</h3>
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-book-open mr-2"></i> Manual de Funciones</h3>
                 <button onclick="closeModal('rolesModal')" class="hover:bg-rose-700 rounded-full w-8 h-8 flex items-center justify-center transition"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="p-6 max-h-[70vh] overflow-y-auto space-y-6">
                 
                 <div class="border-l-4 border-amber-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
                     <h4 class="font-black text-amber-700 dark:text-amber-300 text-lg uppercase mb-2"><i class="fa-solid fa-crown mr-2"></i> LÍDER DE LA JORNADA</h4>
-                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                        <li>Verificar que todos los miembros del equipo lleguen puntualmente (8:30 AM - 1:30 PM / 1:30 PM - 6:30 PM).</li>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Verificar que todos los miembros del equipo lleguen puntualmente.</li>
                         <li>Recibir y entregar el turno al siguiente líder de jornada.</li>
                         <li>Diligenciar el listado de asistencia del equipo y participantes asignados.</li>
                         <li>Recibir los formatos de ventas diligenciados por los impulsadores y organizaciones.</li>
                         <li>Supervisar el correcto desarrollo de las actividades en todas las zonas del evento.</li>
                         <li>En caso de ausencia de un integrante, contactar al contratista o asumir la función si no hay reemplazo.</li>
+                        <li><strong>SE ENCARGA DE RESOLVER CON OPERADOR, DISTRIBUCIÓN DE REFRIGERIOS Y LISTADO DE ASISTENCIA.</strong></li>
+                        <li>Verificar puntualidad del equipo y reportar lista de asistentes y no asistentes.</li>
                     </ul>
                 </div>
 
                 <div class="border-l-4 border-blue-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
-                    <h4 class="font-black text-blue-700 dark:text-blue-300 text-lg uppercase mb-2"><i class="fa-solid fa-bolt mr-2"></i> IMPULSADOR 1 – ZONA 360</h4>
-                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                        <li>Diligenciar el listado de asistencia de las organizaciones de la zona 360.</li>
-                        <li>Entregar y explicar el formato de ventas.</li>
-                        <li>Verificar presencia de las organizaciones en sus stands.</li>
-                        <li>Recoger los formatos de ventas antes de finalizar su turno y entregarlos al líder.</li>
+                    <h4 class="font-black text-blue-700 dark:text-blue-300 text-lg uppercase mb-2"><i class="fa-solid fa-bolt mr-2"></i> IMPULSADOR EXTERNO - PLANTA DE ENERGÍA</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Presentarse ante líder de la jornada y mencionarles novedades específicas.</li>
                         <li>Motivar la participación de los visitantes e invitarlos a recorrer los stands.</li>
-                        <li>Realizar conteo de visitantes y control de compras superiores a $50.000 (entrega de Tote Bag).</li>
+                        <li>Realizar conteos promedio de ingreso de visitantes en la carpa.</li>
+                        <li>Verificar el buen uso de la planta de energía propia de la carpa.</li>
+                        <li>No permitir uso adicional sobre la planta de energía, sin previa autorización.</li>
                     </ul>
                 </div>
+
+                <div class="border-l-4 border-green-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
+                    <h4 class="font-black text-green-700 dark:text-green-300 text-lg uppercase mb-2"><i class="fa-solid fa-cow mr-2"></i> IMPULSADOR EXTERNO - CORRALES</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Motivar la participación de los visitantes e invitarlos a recorrer los stands.</li>
+                        <li>Realizar conteos promedio de ingreso de visitantes en la carpa.</li>
+                        <li>Verificar el estado, uso y aseo de los corrales.</li>
+                        <li>Organizar visitantes para evitar aglomeraciones al observar los animales.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-orange-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
+                    <h4 class="font-black text-orange-700 dark:text-orange-300 text-lg uppercase mb-2"><i class="fa-solid fa-cheese mr-2"></i> CARPA DEL QUESO - EMPRENDIMIENTOS</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Lugar de trabajo: Carpa del Pabellón del Queso (30 Emprendimientos).</li>
+                        <li>Listado de asistencia de organizaciones.</li>
+                        <li>Entregar y explicar el formato de ventas.</li>
+                        <li>Verificar presencia y necesidades de las organizaciones en sus stands.</li>
+                        <li>Recoger los formatos de ventas antes de finalizar su turno y entregarlos al líder.</li>
+                        <li>Motivar la participación de los visitantes e invitarlos a recorrer los stands.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-purple-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
+                    <h4 class="font-black text-purple-700 dark:text-purple-300 text-lg uppercase mb-2"><i class="fa-solid fa-building mr-2"></i> ORGANIZADOR - COLISEO MAYOR</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Lugar de trabajo: Coliseo Mayor (35 Emprendimientos).</li>
+                        <li>Listado de asistencia de organizaciones.</li>
+                        <li>Entregar y explicar el formato de ventas.</li>
+                        <li>Verificar presencia y necesidades de las organizaciones en sus stands.</li>
+                        <li>Recoger los formatos de ventas antes de finalizar su turno y entregarlos al líder.</li>
+                        <li>Motivar la participación de los visitantes e invitarlos a recorrer los stands.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-rose-500 bg-slate-50 dark:bg-slate-700/50 p-4 rounded shadow-sm">
+                    <h4 class="font-black text-rose-700 dark:text-rose-300 text-lg uppercase mb-2"><i class="fa-solid fa-microphone mr-2"></i> TARIMA Y AGENDA</h4>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                        <li>Organización de invitados.</li>
+                        <li>Organización de ACTIVIDADES.</li>
+                        <li>Restricción de tarima a no autorizados.</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
