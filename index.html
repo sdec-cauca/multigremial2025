@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria del Queso 2025</title>
+    
+    <!-- Favicon para la pestaña del navegador -->
+    <link rel="icon" type="image/x-icon" href="./logo.jpg">
+
+    <!-- ================================================================== -->
+    <!-- AQUI ESTÁ LA SOLUCIÓN: META TAGS PARA WHATSAPP (OPEN GRAPH)        -->
+    <!-- ================================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Feria del Queso 2025"> <!-- Título en WhatsApp -->
+    <meta property="og:description" content="Bienvenido al equipo SDEC. Consulta el protocolo y la programación."> <!-- Descripción pequeña -->
+    
+    <!-- IMPORTANTE: WhatsApp prefiere imágenes PNG o JPG, no .ico -->
+    <!-- Para que funcione perfecto, se recomienda poner la URL COMPLETA (ej: https://tusitio.com/logo.png) -->
+    <meta property="og:image" content="https://sdec-cauca.github.io/multigremial2025/logo.jpg"> 
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="90"> <!-- Ancho recomendado -->
+    <meta property="og:image:height" content="30"> <!-- Alto recomendado -->
+    
+    <!-- Fin de Meta Tags -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Roboto Slab', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bg-corporate {
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn-hover-effect:hover {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-corporate h-screen w-full overflow-hidden relative text-slate-200">
+
+    <div id="particles-js" class="absolute inset-0 z-0 opacity-20"></div>
+
+    <main class="relative z-10 h-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
+        
+        <div class="mb-8 animate-[fadeInDown_1s_ease-out_forwards]">
+            <div class="h-24 w-full flex items-center justify-center">
+                <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md overflow-hidden">
+                    <img src="./logo.jpg"
+                        alt="Logo Feria"
+                        class="max-h-full max-w-full object-contain opacity-90 hover:opacity-100 transition-opacity p-2">
+                </div>
+            </div>
+        </div>
+
+        <header class="text-center mb-12">
+            <h2 class="text-sm md:text-base tracking-[0.4em] text-blue-400 uppercase mb-3 font-bold">Bienvenido al equipo SDEC</h2>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">
+                FERIA DEL QUESO 2025
+            </h1>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+        </header>
+
+        <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <a href="protocolo.html" class="group relative block">
+                <div class="glass-dark h-40 md:h-56 rounded-xl p-6 flex flex-row md:flex-col items-center justify-between md:justify-center gap-6 transition-all duration-300 transform hover:-translate-y-1 btn-hover-effect cursor-pointer">
+                    <div class="p-4 rounded-full bg-blue-900/30 text-blue-300 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-book-open text-3xl"></i>
+                    </div>
+                    <div class="text-left md:text-center flex-1">
+                        <h2 class="text-xl md:text-2xl font-bold text-white mb-1">VER PROTOCOLO</h2>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Manual operativo & Roles</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-500 md:hidden"></i>
+                </div>
+            </a>
+
+            <a href="programacion.html" class="group relative block">
+                <div class="glass-dark h-40 md:h-56 rounded-xl p-6 flex flex-row md:flex-col items-center justify-between md:justify-center gap-6 transition-all duration-300 transform hover:-translate-y-1 btn-hover-effect cursor-pointer">
+                    <div class="p-4 rounded-full bg-emerald-900/30 text-emerald-300 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-calendar-days text-3xl"></i>
+                    </div>
+                    <div class="text-left md:text-center flex-1">
+                        <h2 class="text-xl md:text-2xl font-bold text-white mb-1">VER PROGRAMACIÓN</h2>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Agenda & Horarios</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-500 md:hidden"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <footer class="absolute bottom-6 text-slate-500 text-xs">
+            Staff SDEC &bull; Noviembre &bull; 2025
+        </footer>
+    </main>
+</body>
+</html>
